@@ -29,6 +29,4 @@ app.use('/api/attendence', attendenceRouter);
 app.use('/api/dashboard', dashboardRouter);
 
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is Running on port ${process.env.PORT}`)
-})
+export default app;
