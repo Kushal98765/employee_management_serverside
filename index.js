@@ -12,7 +12,11 @@ import attendenceRouter from './routes/attendence.js';
 
 connectToDatabase()
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin: "employee-management-frontend-eta-eight.vercel.app",
+    credentials: true,
+}
+))
 app.use(express.json())
 app.use(express.static('public/uploads'))
 app.use('/api/auth', authRouter)
