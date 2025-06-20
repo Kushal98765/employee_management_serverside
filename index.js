@@ -33,5 +33,9 @@ app.use('/api/setting', settingRouter);
 app.use('/api/attendence', attendenceRouter);
 app.use('/api/dashboard', dashboardRouter);
 
+app.get("/", (req, res) => {
+  res.send("✅ EMS backend is running on Vercel!");
+});
+
 
 export const handler = serverless(app);
