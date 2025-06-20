@@ -31,4 +31,4 @@ app.use('/api/attendence', attendenceRouter);
 app.use('/api/dashboard', dashboardRouter);
 
 
-export default app;
+export const handler = serverless(app);
