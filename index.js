@@ -9,6 +9,8 @@ import salaryRouter from './routes/salary.js';
 import settingRouter from './routes/setting.js';
 import dashboardRouter from './routes/dashboard.js';
 import attendenceRouter from './routes/attendence.js';
+import serverless from 'serverless-http';
+
 
 connectToDatabase()
 const app = express()
